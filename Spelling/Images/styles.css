@@ -1,0 +1,59 @@
+body {
+    
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #b19cd9; /* Light pastel purple */
+    
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#word-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#word-img {
+    display: none;
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+#word {
+    font-size: 24px;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+    animation: pulse 0.5s infinite alternate;
+}
+
+.incorrect {
+    color: red;
+    animation: shake 0.5s;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}

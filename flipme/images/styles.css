@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #A4747F;
+  display: flex;
+}
+
+#loader-background{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #A4747F;
+  z-index: 1000;
+}
+
+#loader{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1001;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#gameOver{
+  top: 50%;
+  left: 25%;
+  display: none;
+  position: absolute;
+  width: 50%;
+  background: #A4747F;
+  z-index: 900;
+}
+
+#playAgain{
+  top: -8%;
+  left: 78%;
+  position: absolute;
+  width: 50%;
+  z-index: 950;
+}
+
+.gameContainer {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card {
+  width: 23%;
+  height: 23%;
+  margin: 5px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.front,
+.back {
+  background-color: #807f7f;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FlipOut - Do You Trust Your Memory</title>
+    <link rel="icon" href="gamelogo.png" sizes="16x16" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loader-background">
+      <div id="loader"></div>
+    </div>
+    <div class="gameContainer">
+      <div class="container" style="padding: 10px; margin-top: -50px;">
+        <h3 class="text-left text-white">Do You Trust Your Memory ?</h3>
+        <div id="playAgain">
+          <button onclick="playAgain()" type="button" class="btn btn-warning">Play Again</button>
+        </div>
+      </div>
+      <div class="container row">
+        <h6 class="col text-left text-white">High Score <span id="highScore" class="badge badge-primary">0</span></h6>
+        <h6 class="col text-center text-white">Chances Left <span id="chancesLeft" class="badge badge-danger">0</span></h6>
+        <h6 class="col text-right text-white">Your Points <span id="points" class="badge badge-success">0</span></h6>
+      </div>
+      <div class="card" data-image="spiderman">
+        <img src="spiderman.jpg" class="front" alt="spideman" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="spiderman">
+        <img src="spiderman.jpg" class="front" alt="spideman" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="fruits">
+        <img src="fruits.jpg" class="front" alt="fruits" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="fruits">
+        <img src="fruits.jpg" class="front" alt="fruits" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="tree">
+        <img src="tree.jpg" class="front" alt="tree" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="tree">
+        <img src="tree.jpg" class="front" alt="tree" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="elephant">
+        <img src="elephant.jpg" class="front" alt="elephant" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="elephant">
+        <img src="elephant.jpg" class="front" alt="elephant" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="mrbean">
+        <img src="mrbean.jpg" class="front" alt="mrbean" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="mrbean">
+        <img src="mrbean.jpg" class="front" alt="mrbean" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="lollipop">
+        <img src="lollipop.jpg" class="front" alt="lollipop" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="lollipop">
+        <img src="lollipop.jpg" class="front" alt="lollipop" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="parrot">
+        <img src="parrot.jpg" class="front" alt="parrot" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="parrot">
+        <img src="parrot.jpg" class="front" alt="parrot" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="aeroplane">
+        <img src="aeroplane.jpg" class="front" alt="aeroplane" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+      <div class="card" data-image="aeroplane">
+        <img src="aeroplane.jpg" class="front" alt="aeroplane" />
+        <img src="gamelogo.png" class="back" alt="gamelogo" />
+      </div>
+    </div>
+    <div class="container" id="gameOver">
+      <div class="alert alert-warning text-center">
+        <strong id="game-over-text">Game Over !</strong>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
