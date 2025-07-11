@@ -73,7 +73,7 @@ Edit
 ## 👥 Team
 
 - Sai Sathviki
-- [Add your teammates here if applicable]
+
 
 ---
 
